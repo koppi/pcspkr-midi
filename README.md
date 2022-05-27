@@ -1,5 +1,5 @@
 # pcspkr-midi
-Turn your pc's speaker into an ALSA MIDI device.
+Turn your PC's speaker into an ALSA MIDI device.
 
 To get write perms on the pc speaker device, add to ```/usr/lib/udev/rules.d/70-pcspkr-beep.rules``` the following line:
 ```
