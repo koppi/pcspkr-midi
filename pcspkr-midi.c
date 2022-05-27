@@ -130,7 +130,7 @@ int main(int argc, char** argv) {
 
   printf("Opened ALSA Midi client:port %d:%d\n", client, port);
   
-  int fd = open("/dev/input/by-path/platform-pcspkr-event-spkr", O_RDWR, 0);
+  int fd = open("/dev/input/by-path/platform-pcspkr-event-spkr", O_WRONLY, 0);
 
   if (fd == -1) {
     fprintf(stderr, "%d: could not open speaker device. Did you \"sudo modprobe pcspkr\"?\n", fd);
